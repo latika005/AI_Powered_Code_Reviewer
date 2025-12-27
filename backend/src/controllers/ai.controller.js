@@ -1,14 +1,14 @@
 import {main} from "../services/ai.service.js";
 
-export async function getResponse(req, res){
+export async function getReview(req, res){
     try{
-        const prompt = req.query.prompt;
+        const {code} = req.body;
 
-        if(!prompt){
-            return res.status(400).json({error : "Prompt is required "});
+        if(!code){
+            return res.status(400).json({error : "Code is required "});
         }
 
-        const response = await main(prompt);
+        const response = await main(code);
 
         return res.status(200).json({ response });
     }catch(error){
