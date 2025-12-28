@@ -2,7 +2,6 @@
   margin : 0%;
   padding : 0%;
   box-sizing : border-box;
-  font-family :'Courier New', Courier, monospace;
   font-weight: 600;
 }
 
@@ -51,7 +50,7 @@ main .left{
 }
 
 .editor {
-  font-family: monospace;
+  font-family :'Courier New', Courier, monospace;
   font-size: 16px;
   line-height: 1.6;
   padding: 12px;
@@ -83,9 +82,66 @@ main .left .review{
   user-select : none;
   border-radius : 0.7rem;
   font-weight: bolder;
-  font-size :large
+  font-size :large;
+  font-family :'Courier New', Courier, monospace;
 }
 
 main .right {
-  background-color: #424242;
-}
+  padding : 2rem 2rem;
+  background-color: #2d2d2d;
+  color : rgba(255, 255, 255, 0.74);
+  font-size: 14px;
+  font-weight: lighter;
+  overflow :scroll; 
+  font-family: 'Courier New', Courier, monospace;
+  line-height : 1.5;
+  letter-spacing: 1px;
+  }
+
+  main .right::-webkit-scrollbar {
+    display: none;
+  }
+
+  .markdown {
+    padding: 1rem;
+    color: #eaeaea;
+    overflow-y: auto;
+    font-size: 0.95rem;
+  }
+  
+  /* Headings */
+  .markdown .heading {
+    color: #7dd3fc;
+    margin-bottom: 0.75rem;
+  }
+  
+  /* Lists */
+  .markdown ul {
+    padding-left: 1.2rem;
+  }
+  
+  .markdown .list-item {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Inline code */
+  .markdown .inline-code {
+    background: #1e1e1e;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    color: #facc15;
+  }
+  
+  /* Code blocks */
+  .markdown pre {
+    background: #0f172a;
+    padding: 1rem;
+    border-radius: 8px;
+    overflow-x: auto;
+  }
+  
+  /* Emojis spacing */
+  .markdown li span {
+    margin-right: 0.4rem;
+  }
+  
