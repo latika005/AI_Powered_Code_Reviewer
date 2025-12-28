@@ -2,7 +2,7 @@ import {main} from "../services/ai.service.js";
 
 export async function getReview(req, res){
     try{
-        const {code} = req.body;
+        const { code } = req.body;
 
         if(!code){
             return res.status(400).json({error : "Code is required "});
