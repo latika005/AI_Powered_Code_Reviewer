@@ -1,3 +1,5 @@
+AI-Powered Code Reviewer (Using React.js and Node.js Stack)
+
 A full-stack AI-powered Code Reviewer web application built with Express.js, React and Node.js that allows developers to submit source code and get automated reviews, feedback, and analysis using AI. The app features syntax-highlighted code input using Prism.js for better readability and developer experience.
 
 -> Features
